@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Reverse An Array</title>
+	</head>
+	<body>
+		<h1>Reverse and Array without .reverse()</h1>
+
+		<script>
+
+			"use strict";
+
+			(function() {
+
+				function reverseArray(array){
+
+					var lettersArray = ["Puss", "MaryGold", "SnapDragon"];
+
+					for(var i = 0; i < lettersArray.length; i++){
+
+						var cutLetter = lettersArray.shift([i]);
+
+						lettersArray.splice((lettersArray.length - i), 0, cutLetter); 
+
+					}
+
+					return lettersArray;
+				
+				}
+
+				console.log(reverseArray());
+
+
+
+				// var lettersArray = ["a", "b"];
+
+				// lettersArray.shift();
+				// lettersArray.splice(4,0,"a");
+
+				// lettersArray.shift();
+				// lettersArray.splice(3,0,"b");
+
+				// lettersArray.shift();
+				// lettersArray.splice(2,0,"c");
+
+				// lettersArray.shift();
+				// lettersArray.splice(1,0, "d");
+
+				// for (var i = 0; i < lettersArray.length; i++){
+
+				// 	// console.log(lettersArray.length);
+
+				// 	var cutLetter = lettersArray.shift([i]);
+
+				// 	lettersArray.splice((lettersArray.length - i), 0, cutLetter);
+
+					// console.log(cutLetter);
+
+
+					// lettersArray.splice(lettersArray[4 - i], 0, cutLetter);
+			
+			
+
+				// console.log(lettersArray);
+
+
+
+			})();
+
+		</script>
+	
+	</body>
+</html>
